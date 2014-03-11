@@ -1,0 +1,1630 @@
+#main > .container{
+    border-top: 1px solid #fff;
+}
+/*search and email support */
+.searchSupport{
+    display: block;
+    padding: 15px 0;
+    background: #eeeeee;
+    border-bottom: 1px solid #e7e7e7;
+    z-index: 100;
+    position: relative;
+}
+    /*emailPopup*/
+    .searchSupport .container{
+        position: relative;
+    }
+    .searchSupport .emailPopup{
+        height: 80px;
+        width: 333px;
+        border-top: 4px solid #0096FF;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        background: #fff;
+        position: absolute;
+        z-index: 101;
+        right: 0;
+        top: 32px;
+        padding: 0 17px;
+        line-height: 22px;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 5px;
+        display: none;
+        border-radius: 0 0 4px 4px;
+        behavior: url(./css/pie.htc);
+    }
+        .searchSupport .emailPopup a{
+            display: block;
+        }
+    .searchSupport .search{
+        border-bottom: 1px solid #949494;
+        height: 34px;
+        width: 796px;
+        background: #ffffff;
+        box-shadow: 0 1px 1px rgba(125, 125, 125, 0.25);
+        behavior: url(./css/pie.htc);
+        display: block;
+        float: left;
+        margin-right: 20px;
+        position: relative;
+    }
+        .searchSupport .search .loading{
+            width: 736px;
+            margin-left: 0;
+            top: 34px;
+            z-index: 100;
+            left: 0;
+        }
+        .searchSupport .search .ui-helper-hidden-accessible{
+            display: none;
+        }
+        .searchSupport .search input{
+            background: transparent;
+            display: block;
+            width: 784px;
+            height: 22px;
+            position: relative;
+        }
+        .searchSupport .sa_searching.ui-autocomplete-loading{
+            background: url(../i/loading-w.gif) 100% 50% no-repeat;
+        }
+        .searchSupport .search input.isBlured{
+            color: #666666;
+        }
+        .searchSupport .search a.searchBtn{
+            float: right;
+            background: url("../i/search-btn.gif") no-repeat 0 0;
+            width: 34px;
+            height: 34px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: background-position 0ms ;
+        }
+        .searchSupport .search a.searchBtn:hover{
+            background-position: 0 -34px;
+        }
+    .searchSupport .emailSupport{
+        display: block;
+        float: left;
+        width: 194px;
+    }
+    .ui-autocomplete{
+        z-index: 102;
+        max-width: 796px;
+        background: none repeat scroll 0 0 #FFFFFF;
+        border-bottom: 1px solid #949494;
+        box-shadow: 0 1px 2px rgba(125, 125, 125, 0.25);
+        behavior: url(./css/pie.htc);
+    }
+        .ui-autocomplete li{
+            border-top: 1px solid #989898;
+        }
+            .ui-autocomplete li a{
+                height: 33px;
+                line-height: 33px;
+                display: block;
+                background: #fff;
+                color: #333;
+                padding-left: 10px;
+                cursor: pointer;
+            }
+            .ui-autocomplete li a:hover{
+                background: #F7F7F7;
+            }
+.dataTable.university th,
+.dataTable.topics th{
+    font-weight: bold;
+}
+.sa-found-text{
+    font-weight: bold; 
+}
+
+/*help main content styles*/
+.grid .grid-3-2 {
+    display: inline-block;
+    padding-left: 24px;
+    width: 666px;
+    position: relative;
+}
+/*left menu style*/
+.leftMenu{
+    min-height: 750px;
+    background: url("../i/left-nav-bg.jpg") no-repeat 100% 0;
+}
+.leftMenu.faqDetails{
+    min-height: 900px;
+}
+    .leftMenu ul.sectionMenu{
+        float: left;
+        font-size: 0;
+    }
+    .leftMenu ul.section{
+        overflow: hidden;
+    }
+    .leftMenu ul.section.desk{
+        display: block ;
+    }
+    .leftMenu li{
+        border-bottom: 1px solid #eeeeee;
+    }
+    .leftMenu li.sectionName,
+    .leftMenu li.current_page_item{
+        height: auto;
+        line-height: 36px;
+        font-size: 18px;
+        color: #fff;
+        border-left: 1px solid #fff;
+    }
+    .leftMenu .current_page_parent li.current_page_item{
+    border-left: none;
+        
+    }
+    .leftMenu .current-menu-ancestor .current_page_parent li.current_page_item{
+        
+    padding-left: 21px;
+    background: url("../i/subtopics-link.png") no-repeat 14px -36px;
+}
+    .leftMenu .current-menu-ancestor{
+        display: block;
+    }
+    .leftMenu li.current-menu-parent{
+        display: block;
+    }
+    .leftMenu li.current_page_item a,
+    .leftMenu li.current-menu-parent a,
+    .leftMenu li.current-menu-ancestor a{
+        padding-left: 10px;        
+    }
+    .leftMenu .sectionMenu li.current_page_item{
+        border-left: none;
+    }
+    .leftMenu .sectionMenu li.current_page_item a,
+    .leftMenu .sectionMenu li.current-menu-parent a,
+    .leftMenu .sectionMenu li.current-menu-ancestor a{
+         padding-left: 0px;     
+    }
+    .leftMenu li.current_page_item .child a{        
+        padding-left: 15px;
+    }
+    .leftMenu li.current_page_item .child .child,
+    .leftMenu li.current-menu-parent .child .child,
+    .leftMenu .current-menu-ancestor .child .child{
+        border-top: 1px solid #999;
+        margin-top: -1px;    
+        border-bottom: 1px solid #EEE;
+    }
+    .leftMenu li.current_page_item .child .child a,
+    .leftMenu li.menu-item .child .child a{      
+        padding-left: 5px;    
+        border-bottom: none;
+}
+    .leftMenu li.current_page_item .child .child  li.last,
+    .leftMenu li.menu-item .child .child  li.last{
+        background: url("../i/subtopics-link.png") no-repeat 14px -36px;
+    }
+    li.current_page_item > li.general-help-depth2,
+    li.current_page_item > li.general-help-depth3,
+    li.current_page_item > li.general-help-depth4,
+    li.current_page_item > li.general-help-depth5,
+    li.current_page_item > li.general-help-depth6{
+        border-top: 1px solid #999;
+        margin-top: -1px;       
+        background: url("../i/subtopics-link.png") no-repeat 14px 0;
+        padding-left: 10px;
+    }
+    li.current_page_item > li.general-help-depth2 > a,
+    li.current_page_item > li.general-help-depth3 > a,
+    li.current_page_item > li.general-help-depth4 > a,
+    li.current_page_item > li.general-help-depth5 > a,
+    li.current_page_item > li.general-help-depth6 > a{
+        border-bottom: 0;
+    }
+    li.current_page_item > li.general-help-depth2.last,
+    li.current_page_item > li.general-help-depth3.last,
+    li.current_page_item > li.general-help-depth4.last,
+    li.current_page_item > li.general-help-depth5.last,
+    li.current_page_item > li.general-help-depth6.last{
+        border-bottom: 1px solid #EEE;
+        background: url("../i/subtopics-link.png") no-repeat 14px -36px;
+        padding-left: 10px;
+    }
+
+    li.current_page_item > li.general-help-depth3 {
+        margin-left: 14px;
+    }
+    li.current_page_item > li.general-help-depth4{
+        margin-left: 28px;
+    }
+    li.current_page_item > li.general-help-depth5{
+        margin-left: 42px;
+    }
+    li.current_page_item > li.general-help-depth6{
+        margin-left: 56px;
+    }
+    .leftMenu li.current_page_item .child .child  li,
+    .leftMenu li.menu-item .child .child  li{
+        padding-left: 21px;
+        background: url("../i/subtopics-link.png") no-repeat 14px 0;
+    }
+    .leftMenu .landingMenu > li.current_page_item > a:first-child,
+    .leftMenu .landingMenu > li.current-menu-parent > a:first-child,
+    .leftMenu .landingMenu > li.current-menu-ancestor > a:first-child{
+        color: #fff;
+        font-size: 18px;
+    }
+    .leftMenu li.topics a{
+        padding-left: 15px;
+    }
+    .leftMenu li.topics.active > a,
+    .leftMenu li.subTopics.active > a{
+        border-left: 4px solid #00add0;
+        background: #e8e8e8;
+        height: 35px;
+        line-height: 35px;
+        border-top: 1px solid #fff;
+    }
+    .leftMenu li.topics ul{
+        border-top: 1px solid #999999;
+    }
+        .leftMenu li.topics ul li{
+            border-bottom: none;
+        }
+        .leftMenu li.topics ul li{
+            padding-left: 21px;
+            background: url("../i/subtopics-link.png") no-repeat 14px 0;
+        }
+        .leftMenu li.topics ul li.last{
+            background: url("../i/subtopics-link.png") no-repeat 14px -36px;
+        }
+            .leftMenu li.topics ul li a{
+                padding-left: 5px;
+            }
+    .leftMenu .section.generalhelp li.sectionName,
+    .leftMenu .section.generalhelp li.current_page_item > a,
+    .leftMenu .section.generalhelp li.current-menu-parent > a,
+    .leftMenu .section.generalhelp li.current-menu-ancestor > a{
+        background-color: #7f00ff;
+        padding-left: 10px;
+    }
+    .leftMenu .section.design li.sectionName,
+    .leftMenu .section.design li.current_page_item > a,
+    .leftMenu .section.design li.current-menu-parent > a,
+    .leftMenu .section.design li.current-menu-ancestor > a{
+        background-color: #00ADD0;
+        padding-left: 10px;
+    }
+    .leftMenu .section.copilot li.sectionName,
+    .leftMenu .section.copilot li.current_page_item > a,
+    .leftMenu .section.copilot li.current-menu-parent > a,
+    .leftMenu .section.copilot li.current-menu-ancestor > a{
+        background-color: #ff6c00;
+        padding-left: 10px;
+    }
+    .leftMenu .section.development li.sectionName,
+    .leftMenu .section.development li.current_page_item > a,
+    .leftMenu .section.development li.current-menu-parent > a,
+    .leftMenu .section.development li.current-menu-ancestor > a{
+        background-color: #7AB800;
+        padding-left: 10px;
+    }
+    .leftMenu .section.datascience li.sectionName,
+    .leftMenu .section.datascience li.current_page_item > a,
+    .leftMenu .section.datascience li.current-menu-parent > a,
+    .leftMenu .section.datascience li.current-menu-ancestor > a{
+        background-color: #FFAE00;
+        padding-left: 10px;
+    }
+    .leftMenu .section.copilots-reviewers li.sectionName,
+    .leftMenu .section.copilots-reviewers li.current_page_item > a,
+    .leftMenu .section.copilots-reviewers li.current-menu-parent > a,
+    .leftMenu .section.copilots-reviewers li.current-menu-ancestor > a{
+        background-color: #FF6C00;
+        padding-left: 10px;
+    }
+    .leftMenu .section.topcoderuniversity li.sectionName,
+    .leftMenu .section.topcoderuniversity li.current_page_item > a,
+    .leftMenu .section.topcoderuniversity li.current-menu-parent > a,
+    .leftMenu .section.topcoderuniversity li.current-menu-ancestor > a{
+        background-color: #D92B2B;
+        padding-left: 10px;
+    }
+    
+    .leftMenu .section li.current-menu-ancestor .current-menu-ancestor > a{
+        background-color: transparent;
+    }
+    .leftMenu .section li.current-menu-parent .current_page_item > a{
+        background-color: #e8e8e8;
+        padding-left: 15px;
+        border-top: 1px solid #FFF;
+        border-left: 4px solid #00ADD0;
+    }
+    .leftMenu .section.generalhelp li.current-menu-parent .current_page_item > a{
+        border-left: 4px solid #7f00ff;
+    }
+    .leftMenu .section.datascience li.current-menu-parent .current_page_item > a{
+        border-left: 4px solid #FFAE00;
+    }
+    .leftMenu .section.topcoderuniversity li.current-menu-parent .current_page_item > a{
+        border-left: 4px solid #D92B2B;
+    }
+    .leftMenu .section.copilots-reviewers li.current-menu-parent .current_page_item > a{
+        border-left: 4px solid #FF6C00;
+    }
+    .leftMenu .section.development li.current-menu-parent .current_page_item > a{
+        border-left: 4px solid #7AB800;
+    }
+    .leftMenu .section.design li.current-menu-parent .current_page_item > a{
+        background-color: #e8e8e8;
+        padding-left: 15px;
+        border-top: 1px solid #FFF;
+        border-left: 4px solid #00ADD0;
+    }
+    .leftMenu .section.design li.current-menu-parent .current_page_item > a{
+        background-color: #e8e8e8;
+        padding-left: 15px;
+        border-top: 1px solid #FFF;
+        border-left: 4px solid #00ADD0;
+    }
+    .leftMenu .section.design li.current-menu-parent .current_page_item > a{
+        background-color: #e8e8e8;
+        padding-left: 15px;
+        border-top: 1px solid #FFF;
+        border-left: 4px solid #00ADD0;
+    }
+    .leftMenu .section.design li.current-menu-parent .current_page_item > a{
+        background-color: #e8e8e8;
+        padding-left: 15px;
+        border-top: 1px solid #FFF;
+        border-left: 4px solid #00ADD0;
+    }
+    .leftMenu .section.design li.current-menu-parent .current_page_item > a{
+        background-color: #e8e8e8;
+        padding-left: 15px;
+        border-top: 1px solid #FFF;
+        border-left: 4px solid #00ADD0;
+    }
+    
+    
+    
+        .leftMenu li a{
+            min-height: 36px;
+            display: block;
+            line-height: 36px;
+            color: #666666;
+            font-size: 14px;
+        }
+        .leftMenu .landingMenu li a{ 
+            min-height: 28px;
+            display: block;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            line-height: 28px;
+            color: #666666;
+            font-size: 14px;
+            padding-left: 15px;
+        }
+        
+        .leftMenu li a i{
+            height: 36px;
+            width: 40px;
+            margin-right: 10px;
+            display: inline-block;
+            float: left;
+            background-image: url("../i/banner-icons.png");
+            background-repeat: no-repeat;
+            transition-duration: 0.3s;
+        }
+        .leftMenu li a i:hover{
+            background-color: #000 !important;
+        }
+        .leftMenu ul.sectionMenu li a i{
+            margin-right: 0;
+            background-color: #999999;
+        }
+        .leftMenu li a.design i,
+        .leftMenu ul.sectionMenu li a.design.active i,
+        .leftMenu ul.sectionMenu li.current-menu-item a.design i,
+        .leftMenu ul.sectionMenu li.current-page-ancestor a.design i{
+            background-position: 50% -36px;
+            background-color: #00add0;
+        }
+        .leftMenu li a.development i,
+        .leftMenu ul.sectionMenu li a.development.active i,
+        .leftMenu ul.sectionMenu li.current-menu-item a.development i,
+        .leftMenu ul.sectionMenu li.current-page-ancestor a.development i{
+            background-position: 50% -72px;
+            background-color: #7ab800;
+        }
+        .leftMenu li a.datascience i,
+        .leftMenu ul.sectionMenu li a.datascience.active i,
+        .leftMenu ul.sectionMenu li.current-menu-item a.datascience i,
+        .leftMenu ul.sectionMenu li.current-page-ancestor a.datascience i{
+            background-position: 50% -108px;
+            background-color: #ffae00;
+        }
+        .leftMenu li a.copilots-reviewers i,
+        .leftMenu ul.sectionMenu li a.copilots-reviewers.active i,
+        .leftMenu ul.sectionMenu li.current-menu-item a.copilots-reviewers i,
+        .leftMenu ul.sectionMenu li.current-page-ancestor a.copilots-reviewers i{
+            background-position: 50% -144px;
+            background-color: #ff6c00;
+        }
+        .leftMenu li a.topcoderuniversity i,
+        .leftMenu ul.sectionMenu li a.topcoderuniversity.active i,
+        .leftMenu ul.sectionMenu li.current-menu-item a.topcoderuniversity i,
+        .leftMenu ul.sectionMenu li.current-page-ancestor a.topcoderuniversity i{
+            background-position: 50% -180px;
+            background-color: #d92b2b;
+        }
+        .leftMenu li a.generalhelp i,
+        .leftMenu ul.sectionMenu li a.generalhelp.active i,
+        .leftMenu ul.sectionMenu li.current-menu-item a.generalhelp i,
+        .leftMenu ul.sectionMenu li.current-page-ancestor a.generalhelp i{
+            background-position: 50% -216px;
+            background-color: #7f00ff;
+        }
+        .leftMenu li a:hover{
+            color: #ff8a00;
+        }
+   /* landingMenu */
+        .landingMenu li{
+            border-bottom: none;
+        }
+        .landingMenu li.splitted{
+            margin-top: 36px;
+            border-top: 1px solid #eee;
+        }
+            .landingMenu li a{
+                border-bottom: 1px solid #eee;
+            }
+        .landingMenu > li{
+            display: none;
+        }
+        .landingMenu > li.current_page_item{
+            display: block;
+        }
+        
+
+/*breadcrumb styles*/
+.breadcrumb{
+    padding: 16px 0 14px;
+    overflow: hidden;
+}
+    .breadcrumb a,
+    .breadcrumb span{
+        display: inline-block;
+        padding: 0 5px 0 15px;
+        height: 15px;
+        font-size: 12px;
+        position: relative;
+        line-height: 15px;
+    }
+    .breadcrumb a.home{
+        padding-left: 0;
+    }
+    .breadcrumb span.curr{
+        color: #666;
+        cursor: default;
+    }
+        .breadcrumb a i,
+        .breadcrumb span i{
+            background: url("../i/breadcrumb-arrow.jpg") no-repeat 1px 90%;
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+/*faqs*/
+.faqs{
+    margin-top: 10px;
+    border: 1px solid #e7e7e7;
+    overflow: hidden;
+}
+    .faqs .banners{
+        width: 441px;
+        float: left;
+    }
+        .faqs .banners .banner{
+            display: none;
+            overflow: hidden;
+            height: 215px;
+        }
+        .faqs .banners .banner.active{
+            display: block;
+        }
+    .bannerIcons{
+        background: #999;
+        overflow: hidden;
+        height: 36px;
+    }
+        .bannerIcons li{
+            float: left;
+            height: 36px;
+        }
+            .bannerIcons li a{
+                display: inline-block;
+                height: 36px;
+                background-image: url("../i/banner-icons.png");
+                background-repeat: no-repeat;
+                width: 81px;
+            }
+            .bannerIcons li a.home{
+                background-position: 50% 0;
+                width: 36px;
+            }
+            .bannerIcons li a.design{
+                background-position: 50% -36px;
+            }
+            .bannerIcons li a.dev{
+                background-position: 50% -72px;
+            }
+            .bannerIcons li a.algo{
+                background-position: 50% -108px;
+            }
+            .bannerIcons li a.copilot{
+                background-position: 50% -144px;
+            }
+            .bannerIcons li a.uni{
+                background-position: 50% -180px;
+            }
+            .bannerIcons li a.home.active{
+                background-color: #333333;
+            }
+            .bannerIcons li a.design.active{
+                background-color: #00add0;
+            }
+            .bannerIcons li a.dev.active{
+                background-color: #7ab800;
+            }
+            .bannerIcons li a.algo.active{
+                background-color: #ffae00;
+            }
+            .bannerIcons li a.copilot.active{
+                background-color: #ff6c00;
+            }
+            .bannerIcons li a.uni.active{
+                background-color: #d92b2b;
+            }
+    /*banner names*/
+    .bannerNames{
+        height: 28px;
+    }
+        .bannerNames > div{
+            display: none;
+            padding-left: 8px;
+            line-height: 28px;
+            font-size: 14px;
+            color: #fff;
+        }
+        .bannerNames > div.active{
+            display: block;
+        }
+        .bannerNames > div.home{
+            background-color: #333333;
+        }
+        .bannerNames > div.design{
+            background-color: #00add0;
+        }
+        .bannerNames > div.dev{
+            background-color: #7ab800;
+        }
+        .bannerNames > div.algo{
+            background-color: #ffae00;
+        }
+        .bannerNames > div.copilot{
+            background-color: #ff6c00;
+        }
+        .bannerNames > div.uni{
+            background-color: #d92b2b;
+        }
+
+    .faq{
+        padding: 15px;
+        float: left;
+    
+        border-left: 1px solid #E7E7E7;
+}
+        .faq h3{
+            font-size: 18px;
+            line-height: 18px;
+            padding-bottom: 15px;
+        }
+            .faq h3 a{
+                color: #434343;
+            }
+            .faq h3 a:hover{
+                color: #ff8a00;
+            }
+        .faq li {
+            padding: 1px 2px;
+        }
+            .faq li a{
+                height: 36px;
+                display: block;
+                line-height: 36px;
+                color: #666666;
+                font-size: 14px;
+                padding-left: 50px;
+                background-image: url("../i/faq-icons.png");
+                background-repeat: no-repeat;
+            }
+            .faq li a.design{
+                background-position: 0 0;
+            }
+            .faq li a.development{
+                background-position: 0 -36px;
+            }
+            .faq li a.datascience{
+                background-position: 0 -72px;
+            }
+            .faq li a.copilots-reviewers{
+                background-position: 0 -108px;
+            }
+            .faq li a.topcoderuniversity{
+                background-position: 0 -144px;
+            }
+            .faq li a.generalhelp{
+                background-position: 0 -180px;
+            }
+            .faq li a:hover{
+                color: #ff8a00;
+            }
+
+/*university and commonTopics*/
+.uniAndCommonTopics{
+    overflow: hidden;
+    padding-top: 20px;
+}
+    .uniAndCommonTopics .dataTable{
+        width: 319px;
+        border: 1px solid #e7e7e7;
+    }
+    .uniAndCommonTopics table.left{
+        float:left;
+    }
+    .uniAndCommonTopics .university{
+        float: left;
+    }
+    .uniAndCommonTopics .topics{
+        float: right;
+    }
+        .uniAndCommonTopics tbody td{
+            font-size: 12px;
+            line-height: 18px;
+            text-align: left;
+        }
+        .uniAndCommonTopics .topics tbody td{
+            padding: 0 15px;
+        }
+            .uniAndCommonTopics .topics tbody td a{
+                display: block;
+            }
+            .uniAndCommonTopics .topics tbody td.details a{
+                margin-top: 40px;
+                font-weight: bold;
+            }
+        .uniAndCommonTopics .university tbody td.pic{
+            width: 77px;
+            text-align: center;
+        }
+            .uniAndCommonTopics .university tbody td .date{
+                display: block;
+                text-align: right;
+                font-style: italic;
+                font-size: 11px;
+                line-height: 16px;
+                padding-right: 25px;
+            }
+    .uniAndCommonTopics .viewAll,
+    .memberTips .viewAll{
+        font-size: 16px;
+        padding-top: 10px;
+        display: inline-block;
+    }
+    .uniAndCommonTopics .viewAll.leftPadding{
+        padding-left: 15px;
+    }
+.fRight{
+    float: right;
+}
+.fLeft{
+    float: left;
+}
+/*member Tips*/
+.memberTips{
+    margin-top: 45px;
+    border-top: 1px solid #e7e7e7;
+    position: relative;
+}
+    .memberTips h2{
+        background: url("../i/member-tips-icon.png") no-repeat 0 50%;
+        height: 32px;
+        line-height: 32px;
+        padding: 20px 0 20px 38px;
+        font-size: 24px;
+        font-weight: normal;
+    }
+    .memberTips .tips{
+        width: 280px;
+        padding: 15px 19px;
+        border: 1px solid #e7e7e7;
+    }
+        .memberTips .tips h3{
+            color: #01a8e9;
+            font-size: 18px;
+            line-height: 20px;
+        }
+        .memberTips .tips .likes{
+            text-align: right;
+        }
+            .memberTips .tips .likes a{
+                display: inline-block;
+                background: url("../i/like-icon.png") no-repeat;
+                height: 20px;
+                line-height: 20px;
+                padding-left: 32px;
+            }
+        .memberTips .tips .userDetails{
+            padding-top: 10px;
+            overflow: hidden;
+        }
+            .memberTips .tips .userDetails .photo{
+                display: block;
+                width: 80px;
+                padding-top: 3px;
+            }
+                .memberTips .tips .userDetails .photo a{
+                    font-size: 12px;
+                }
+            .memberTips .tips .userDetails .detail{
+                font-family: Arial,sans-serif;
+                display: block;
+                overflow: hidden;
+                padding-right: 5px;
+            }
+        .memberTips .submitTipBtn{
+            text-align: center;
+        }
+            .memberTips .submitTipBtn .btn{
+                position: absolute;
+                top: 18px;
+                right: 0;
+            }
+
+/*section page styles*/
+.sectionBanner{
+    display: block;
+    padding: 10px 0;
+    overflow: hidden;
+}
+    .sectionBanner .banner{
+        float: left;
+        width: 414px;
+        height: 142px;
+    }
+    .sectionBanner .banner.design{
+        background: url("../i/section-banner-design.jpg") no-repeat;
+    }
+    .sectionBanner .banner.copilot{
+        background: url("../i/section-banner-copilot.jpg") no-repeat;
+    }
+    .sectionBanner .banner.competition{
+        background: url("../i/compettion-type-banner.jpg") no-repeat;
+        height: 106px;
+        width: 100%;
+    }
+    .sectionBanner .banner.memberTip{
+        background: url("../i/member-tip-banner.jpg") no-repeat;
+        height: 106px;
+        width: 100%;
+        position: relative;
+    }
+        .sectionBanner .banner .textContent{
+            padding: 15px 20px;
+            width: 500px;
+        }
+        .sectionBanner .banner.memberTip .textContent{
+            width: 350px;
+        }
+            .sectionBanner .banner .textContent h3{
+                height: 28px;
+                line-height: 28px;
+                font-size: 18px;
+                font-weight: normal;
+                color: #fff;
+            }
+            .sectionBanner .banner .textContent p{
+                line-height: 22px;
+                font-size: 14px;
+                font-weight: normal;
+                color: #fff;
+            }
+        .sectionBanner .banner.memberTip a.submitTip{
+            position: absolute;
+            right: 118px;
+            top: 34px;
+        }
+    .sectionBanner .latest{
+        float: left;
+        width: 252px;
+        height: 142px;
+    }
+        .sectionBanner .latest table{
+            border-right: 1px solid #e7e7e7;
+        }
+        .sectionBanner .latest th{
+            text-align: left;
+            padding: 0 10px;
+        }
+        .sectionBanner .latest td{
+            height: 42px;
+            padding: 3px 3px 3px 13px;
+        }
+        .sectionBanner .latest td.date{
+            vertical-align: bottom;
+            text-align: right;
+        }
+            .sectionBanner .latest td a{
+                padding-left: 38px;
+                height: 25px;
+                background-image: url("../i/latest-icons.jpg");
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                display: block;
+                font-size: 12px;
+                line-height: 25px;            
+            }
+            .pagegeneral-help .sectionBanner .latest td a{
+                background-position: 0 -126px;
+            }
+            .pagedevelopment .sectionBanner .latest td a{
+                background-position: 0 -25px;
+            }
+            .pagedesign .sectionBanner .latest td a{
+                background-position: 0 0;
+            }
+            .pagedata-science .sectionBanner .latest td a{
+                background-position: 0 -51px;
+            }
+            .pagecopilots-reviewers .sectionBanner .latest td a{
+                background-position: 0 -75px;
+            }
+            .pagetopcoder-university .sectionBanner .latest td a{
+                background-position: 0 -101px;
+            }
+            .sectionBanner .latest td.date span{
+                font-size: 12px;
+                font-style: italic;
+            }
+/*most popular*/
+.subSection{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+.subSection.searchResult{
+    margin-bottom: 80px;
+}
+    .subSection header{
+        overflow: hidden;
+        border-bottom: 1px solid #e7e7e7;
+    
+        margin-bottom: 5px;
+}
+    .subSection.faqsSection header,
+    .subSection.faqDetails header,
+    .subSection.subTopics header,
+    .subSection.searchResult header{
+        border-bottom: none;
+    }
+    .subSection.subTopics #gridView{
+        border-top: 1px solid #e7e7e7;
+    }
+    .subSection.subTopics #tableView,
+    .subSection.searchResult #tableView{
+        padding-top: 0;
+        overflow: hidden;
+    }
+    .subSection.faqsSection #tableView,
+    .subSection.memberTip #tableView{
+        padding-top: 10px;
+    }
+        .subSection.subTopics #tableView p{
+            line-height: 22px;
+        }
+    .subSection .optionContainer{
+        position: absolute;
+        width: 515px;
+        top: 16px;
+        right: 0;
+        font-size: 0;
+        text-align: right;
+        height: 20px;
+    }
+    .subSection.memberTip .optionContainer{
+        padding: 16px 0;
+        position: relative;
+        text-align: left;
+        top: 0;
+        min-height: 23px;
+    }
+        .subSection .optionContainer .optionBtn{
+            margin-left: 5px;
+            transition-duration: 0s;
+        }
+        .subSection.memberTip .optionContainer .optionBtn{
+            margin-left: 0;
+            margin-right: 5px;
+        }
+    /* option buttons */
+    .btn.optionBtn, a.btn.optionBtn{
+        height: 16px;
+        line-height: 19px;
+        width: auto;
+        font-size: 11px;
+        border-radius: 3px;
+        padding: 0 10px;
+        min-width: 30px;
+    }
+    .btn.optionBtn.check{
+        background: #999999;
+        border-bottom: none;
+        border-top: 4px solid #7a7a7a;
+        line-height: 13px;
+        position: relative;
+        top: 1px;
+    }
+    .btn.optionBtn.check:hover{
+        background: #7a7a7a;
+    }
+    .subSection h1{
+        font-size: 24px;
+        padding: 10px 0 20px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .subSection.faqDetails h1{
+        padding: 10px 0 10px 50px;
+        margin-bottom: 3px;
+        background: url("../i/help-types.png") no-repeat;
+        background-position: 0 6px;
+    }
+    .subSection.faqDetails.faqdesign h1{
+        background-position: 0 8px;
+    }
+    .subSection.faqDetails.faqdevelopment h1{
+        background-position: 0 -70px;
+    }
+    .subSection.faqDetails.faqdatascience h1{
+        background-position: 0 -150px;
+    }
+    .subSection.faqDetails.faqcopilots-reviewers h1{
+        background-position: 0 -235px;
+    }
+    .subSection.faqDetails.faqtopcoder-university h1{
+        background-position: 0 -320px;
+    }
+    .subSection.faqDetails.faqgeneral-help h1{
+        background-position: 0 -390px;
+    }
+    
+    header .rt{
+        position: absolute;
+        right: 0;
+        top: 6px;
+    }
+    header .rt a{
+        padding-top: 1px;
+        display: inline-block;
+        float: left;
+        margin-left: 20px;
+
+        line-height: 36px;
+        -moz-transition-duration: 0s; -webkit-transition-duration: 0s; transition-duration: 0s;
+        border-top: 3px solid transparent;
+    }
+    header .rt .gridView:hover,
+    header .rt .listView:hover{
+        border-top: 3px solid #FF8A00;
+    }
+
+    .views > a{
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background: url(../i/ico-views.png) no-repeat;
+        background-position: 0 0;
+    }
+    .views .gridView{
+        background-position: 0 -47px;
+    }
+    .views .listView{
+        background-position: 0 -147px;
+    }
+
+    .views .gridView.isActive{
+        background-position: 0 3px;
+        cursor: default;
+    }
+    .views .gridView.isActive:hover{
+        border-top: 3px solid rgba(0, 0, 0, 0);
+    }
+
+    .views .listView.isActive{
+        background-position: 0 -97px;
+        cursor: default;
+    }
+    .views .listView.isActive:hover{
+        border-top: 3px solid transparent;
+    }
+
+    /*view tabs*/
+    /*grid view*/
+    .subSection .viewTab .grid-3-1{
+        width: auto;
+        float: left;
+        margin: 0 -3px;
+    }
+    .subSection .viewTab .grid-3-2{
+        width: 66.6%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .subSection .viewTab .grid-1{
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+    .subSection .videoView .grid-3-1{
+        width: 228px;
+    }
+    .subSection #tableView{
+        padding-top: 24px;
+    }
+    .subSection.faqDetails #tableView{
+        padding-top: 0;
+    }
+        .subSection .viewTab .grid-3-1 article{
+            border: 1px solid #e7e7e7;
+            width: 214px;
+            position: relative;
+            display: block;
+            margin: 10px 4px 0;
+        
+            float: left;
+}
+        .subSection .viewTab .grid-3-2 article{
+            border: 1px solid #e7e7e7;
+            width: 430px;
+            display: block;
+        }
+        .subSection .viewTab .grid-1 article{
+            border: 1px solid #e7e7e7;
+            display: block;
+            position: relative;
+        }
+        .subSection #tableView.viewTab article{
+            margin-top: 0;
+            border-top: none;
+        }
+        .subSection.subTopics #tableView.viewTab article,
+        .subSection.searchResult #tableView.viewTab article,
+        .subSection.faqsSection #tableView.viewTab article,
+        .subSection.faqDetails #tableView.viewTab article{
+            border-left: none;
+            border-right: none;
+        }
+        .subSection.memberTip #tableView.viewTab article{
+            border-left: 1px solid #e7e7e7;
+            border-right: 1px solid #e7e7e7;
+        }
+        .subSection #tableView.viewTab article.searchMsg{
+            height: auto;
+            line-height: 28px;
+            padding: 8px;
+        }
+            .subSection #tableView.viewTab article.searchMsg .content{
+                min-height: 28px;
+                padding: 0 9px;
+            }
+        .subSection #tableView.viewTab article.alt{
+            background: #f1f1f1;
+        
+            margin-bottom: -1px;
+}
+        .subSection #tableView.viewTab article:first-child{
+            border-top: 1px solid #e7e7e7;
+        }
+        .subSection .viewTab .grid-3-1.centerCol article{
+            margin: 10px auto 0;
+        }
+        .subSection .viewTab .grid-3-1.rightCol article{
+            float: right;
+        }
+            .subSection .viewTab .grid-3-1 .date{
+                text-align: center;
+                font-size: 13px;
+                background: #f1f1f1;
+                height: 44px;
+                line-height: 44px;
+            }
+            .subSection #tableView.viewTab .grid-3-1 .date{
+                background: transparent;
+                height: 38px;
+                line-height: 38px;
+            }
+            .subSection #tableView.viewTab .grid-3-2 .date{
+                text-align: right;
+                font-size: 12px;
+                padding: 25px 30px 25px;
+            }
+            .subSection #tableView.viewTab .grid-1 .like{
+                position: absolute;
+                height: 30px;
+                right: 0;
+                top: 50%;
+                margin-top: -10px;
+            }
+            .subSection #gridView.viewTab .grid-3-1 .like{
+                background: #f1f1f1;
+                height: 35px;
+                line-height: 35px;
+                text-align: right;
+            }
+            .subSection #gridView.viewTab .grid-3-1 .memberAndLike{
+                padding: 5px;
+                background: #f1f1f1;
+                height: 35px;
+                line-height: 35px;
+            }
+                .subSection .viewTab .grid-3-1 .like a,
+                .subSection .viewTab .grid-1 .like a{
+                    display: inline-block;
+                    background: url("../i/like-icon.png") no-repeat;
+                    height: 20px;
+                    font-size: 12px;
+                    line-height: 20px;
+                    padding: 0 20px 0 30px;
+                }
+            .subSection .viewTab .grid-3-1 .content,
+            .subSection .viewTab .grid-3-2 .content{
+                padding: 0 17px;
+                height: 160px;
+            }
+            .subSection #tableView.viewTab .grid-3-1 .content,
+            .subSection #tableView.viewTab .grid-3-2 .content,
+            .subSection #tableView.viewTab .grid-1 .content{
+                padding: 0 17px;
+                height: auto;
+            }
+            .subSection #tableView.viewTab .grid-1 .content{
+                padding-right: 120px;
+                min-height: 75px;
+                padding-bottom: 25px;
+                font-size: 13px;
+            }
+            .subSection #tableView.viewTab .grid-1 .searchMsg .content{
+                font-size: 14px;
+            }
+            .subSection.memberTip #tableView.viewTab .grid-1 .content{
+                padding: 0 17px;
+            }
+                .subSection .viewTab .grid-3-1 .content h3,
+                .subSection .viewTab .grid-3-2 .content h3,
+                .subSection .viewTab .grid-1 .content h3{
+                    font-size: 15px;
+                    height: 50px;
+                    line-height: 25px;
+                    margin-top: 10px;                
+                    overflow: hidden;
+                }
+                .subSection .viewTab .grid-3-1 .content p,
+                .subSection.memberTip .viewTab .content p{
+                    font-size: 13px;
+                    line-height: 22px;
+                }
+            .subSection.memberTip #tableView.viewTab .grid-1 .memberAndLike{
+                padding: 15px 0;
+                overflow: hidden;
+            }
+                .subSection.memberTip .memberAndLike a.member{
+                    background: url("../i/member-icon.gif") no-repeat;
+                    height: 35px;
+                    padding-left: 45px;
+                    line-height: 35px;
+                    float: left;
+                }
+                .subSection.memberTip .memberAndLike a.likes{
+                    background: url("../i/like-icon.png") no-repeat scroll 0 0;
+                    display: inline-block;
+                    font-size: 12px;
+                    height: 20px;
+                    line-height: 20px;
+                    padding: 0 3px 0 30px;
+                    float: right;
+                    margin-top: 9px;
+                }
+    /*sub navs*/
+    .subSection .subNav{
+        padding: 5px 18px 10px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+        .subSection .subNav a{
+            display: inline-block;
+            height: 28px;
+            line-height: 28px;
+            font-size: 15px;
+        }
+    .subSection .subTypes{
+        padding: 10px 18px 20px;
+        border-bottom: 1px solid #e7e7e7;
+        font-size: 13px;
+    }
+        .subSection .subTypes h3{
+            font-size: 20px;
+            color: #333;
+            padding: 15px 0 5px;
+        }
+        .subSection .subTypes ul{
+            list-style: disc;
+        }
+        .subSection .subTypes ul , .subSection .subTypes ol{
+            margin-left: 20px;
+        }
+        .subSection .subTypes p{
+            padding: 10px 0;
+            line-height: 23px;
+            font-size: 13px;
+        }
+            .subSection .subTypes p span{
+                display: block;
+            }
+
+    /*related section*/
+    .relatedSection{
+        padding-top: 25px;
+        overflow: hidden;
+        margin-bottom: 150px;
+    }
+        .relatedSection article{
+            border: 1px solid #e7e7e7;
+            padding: 10px 16px;
+            float: left;
+            height: 140px;
+        }
+        .relatedSection article.related{
+            width: 292px;
+            margin-right: 10px;
+        }
+        .relatedSection article.resource{
+            width: 294px;
+        }
+        .relatedSection article.video{
+            padding: 21px 18px;
+            height: 118px;
+            border-left: none;
+        }
+            .relatedSection article h4{
+                font-size: 14px;
+                color: #666;
+                margin-bottom: 11px;
+                line-height: 20px;
+            }
+            .relatedSection article a{
+                display: block;
+                font-size: 13px;
+                height: 18px;
+                line-height: 18px;
+                margin-bottom: 11px;
+            }
+            .relatedSection article.resource a{
+                padding-left: 25px;
+                background-image: url("../i/resource-icons.jpg");
+                background-repeat: no-repeat;
+            }
+            .relatedSection article.resource a.download{
+                background-position: 0 0;
+            }
+            .relatedSection article.resource a.uml{
+                background-position: 0 -18px;
+            }
+
+/*faqList*/
+.faqList{
+    overflow: hidden;
+}
+    .faqList .grid-3-1{
+        width: 33.3%;
+        padding: 0;
+        margin: 0;
+    }
+    .faqList .grid-3-1 a{
+        width: 174px;
+        height: 30px;
+        padding: 149px 20px 25px;
+        display: block;
+        border: 1px solid #e7e7e7;
+        text-align: center;
+        line-height: 30px;
+        font-size: 24px;
+        margin-bottom: 9px;
+        color: #333;
+        background-image: url("../i/faqs-icon-lrg.png");
+        background-repeat: no-repeat;
+        transition: background-position 0ms ;
+    }
+    .faqList .grid-3-1 a:hover{
+        color: #ffB800;
+    }
+    .faqList .grid-3-1.centerCol a{
+        margin: 0 auto 9px;
+    }
+    .faqList .grid-3-1.rightCol a{
+        float: right;
+    }
+    .faqList .grid-3-1 a.design{
+        background-position: 0 33%;
+    }
+    .faqList .grid-3-1 a.development{
+        background-position: -214px 33%;
+    }
+    .faqList .grid-3-1 a.data-science{
+        background-position: -428px 33%;
+        height: 60px;
+        padding: 124px 20px 20px;
+    }
+    .faqList .grid-3-1 a.copilot{
+        background-position: -642px 33%;
+        height: 60px;
+        padding: 124px 20px 20px;
+    }
+    .faqList .grid-3-1 a.university{
+        background-position: -856px 33%;
+        height: 60px;
+        padding: 124px 20px 20px;
+    }
+    .faqList .grid-3-1 a.generalhelp{
+        background-position: -1070px 33%;
+        
+    }
+    .faqList .grid-3-1 a.question{
+        background-position: -1070px 33%;
+    }
+    .faqList .grid-3-1 a.generalhelp:hover{
+        background-position: -2354px 33%;
+    }
+    .faqList .grid-3-1 a.design:hover{
+        background-position: -1284px 33%;
+    }
+    .faqList .grid-3-1 a.development:hover{
+        background-position: -1498px 33%;
+    }
+    .faqList .grid-3-1 a.data-science:hover{
+        background-position: -1712px 33%;
+    }
+    .faqList .grid-3-1 a.copilot:hover{
+        background-position: -1926px 33%;
+    }
+    .faqList .grid-3-1 a.university:hover{
+        background-position: -2140px 33%;
+        height: 60px;
+        padding: 124px 20px 20px;
+    }
+    .faqList .grid-3-1 a.question:hover{
+        background-position: -2354px 33%;
+    }
+/* dataChanges */
+.dataChanges{
+    padding-top: 19px;
+    font-size: 16px;
+    min-height: 20px;
+    overflow: hidden;
+}
+.subSection .viewTab .grid-3-2 .dataChanges{
+    padding-right: 10px;
+}
+    .dataChanges .lt{
+        float: left;
+    }
+    .dataChanges .rt{
+        float: right;
+
+        text-align: right;
+        overflow: hidden;
+    }
+    .dataChanges .nextLink{
+        display: inline-block;
+        padding-right: 20px;
+        position: relative;
+        padding-left: 40px;
+        float: left;
+    }
+        .dataChanges .nextLink i{
+            top: 2px;
+        }
+    .dataChanges .prevLink{
+        display: inline-block;
+        padding-left: 20px;
+        position: relative;
+        float: left;
+    }
+    .dataChanges .prevLink.hide{
+        display: none;
+        }
+        .dataChanges .prevLink i{
+            top: 2px;
+        }
+
+
+/*modal window*/
+.modalOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 999;
+    display: none;
+}
+.modal{
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    border-radius: 3px;
+    background: #fff;
+    width: 476px;
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 1px 2px rgba(125, 125, 125, 0.75);
+    behavior: url(./css/pie.htc);
+}
+#submitTip.modal{
+    width: 636px;
+}
+    .modal header{
+        background: #0096ff;
+        font-size: 18px;
+        color: #fff;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 3px 3px 0 0;
+        behavior: url(./css/pie.htc);
+    }
+    .modal .content{
+        padding: 11px 13px;
+    }
+        .modal .content .inputCnt{
+            border: 1px solid #e7e7e7;
+            margin-bottom: 9px;
+            padding: 6px;
+            position: relative;
+        }
+        .modal .content .inputCnt.error{
+            border: 1px solid #ff3b33;
+        }
+            .modal .content .inputCnt .charLeft{
+                height: 20px;
+                line-height: 20px;
+                font-size: 11px;
+                padding-right: 15px;
+                color: #8e8c8c;
+                text-align: right;
+                background: #eaeaea;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+
+            }
+            .modal .content .inputCnt input[type=text],
+            .modal .content .inputCnt textarea{
+                padding: 0;
+                border: none;
+                background: transparent;
+                resize: none;
+                width: 100%;
+                font-style: italic;
+                overflow: auto;
+            }
+            .modal .content .inputCnt input[type=text].isBlured,
+            .modal .content .inputCnt textarea.isBlured{
+                color: #7D7C7C;
+            }
+        .modal .content .sbHolder{
+            border: 1px solid #e7e7e7;
+            padding: 0;
+            position: relative;
+            margin-bottom: 9px;
+        }
+        .modal .content .sbHolder.error{
+            border: 1px solid #ff3b33;
+        }
+            .modal .content .sbHolder a{
+                color: #7d7c7c;
+                display: block;
+                height: 20px;
+                line-height: 20px;
+                padding: 4px 6px;
+            }
+            .modal .content .sbHolder.changed a.sbSelector{
+                color: #333;
+            }
+            .modal .content .sbHolder a.sbSelector{
+                padding: 0 6px;
+                height: 32px;
+                line-height: 32px;
+                font-style: italic;
+            }
+            .modal .content .sbHolder a.sbToggle{
+                position: absolute;
+                height: 8px;
+                margin: 13px 6px;
+                padding: 0;
+                right: 0;
+                top: 0;
+                width: 13px;
+                background: url("../i/arrows-ud.png") no-repeat;
+            }
+            .modal .content .sbHolder a.sbToggle.sbToggleOpen{
+                background: url("../i/arrows-ud.png") no-repeat 0 100%;
+            }
+            .modal .content .sbHolder ul{
+                position: absolute;
+                border: 1px solid #e7e7e7;
+                background: #fff;
+                z-index: 1001;
+                display: block;
+                width: 100%;
+                left: -1px;
+                max-height: 1000px !important;
+            }
+                .modal .content .sbHolder ul a:hover{
+                    background: #ff9900;
+                    color: #fff;
+                }
+        .modal .content .buttonBar{
+            padding: 6px 0 2px;
+            text-align: center;
+            font-size: 0;
+        }
+            .modal .content .buttonBar a{
+                margin: 0 4px;
+            }
+        .modal .content .submitSuccessMsg{
+            text-align: center;
+            padding: 50px 0;
+        }
+        .modal .content .grid-2-1{
+            width: 50%;
+            float: left;
+            padding-bottom: 10px;
+        }
+            .modal .content .grid-2-1 h4{
+                color: #333;
+                font-size: 14px;
+            }
+            .modal .content .grid-2-1 ul.guide li{
+                color: #666;
+                font-size: 14px;
+                padding: 8px 25px 8px 13px;
+                line-height: 16px;
+                background: url("../i/member-tip-bullet.gif") no-repeat 0 13px;
+            }
+            .modal .content .grid-2-1 ul.examples li{
+                color: #666;
+                font-size: 14px;
+                padding: 8px 0 8px 34px;
+                line-height: 16px;
+                background: url("../i/example-icons.gif") no-repeat 0 10px;
+            }
+            .modal .content .grid-2-1 ul.examples li.wrong{
+                background: url("../i/example-icons.gif") no-repeat 0 -70px;
+            }
+

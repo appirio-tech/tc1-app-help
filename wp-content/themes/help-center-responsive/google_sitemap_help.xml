@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url>
+  <loc>http://help.topcoder.com/</loc>
+  <image:image>
+     <image:loc>http://www.topcoder.com/wp-content/themes/tcs-responsive/i/logo.png</image:loc> 
+  </image:image>
+</url>
+<url><loc>http://help.topcoder.com/general-help/</loc></url>
+<url><loc>http://help.topcoder.com/design/</loc></url>
+<url><loc>http://help.topcoder.com/development/</loc></url>
+<url><loc>http://help.topcoder.com/data-science/</loc></url>
+<url><loc>http://help.topcoder.com/copilots-reviewers/</loc></url>
+<url><loc>http://help.topcoder.com/general-help/member-account/guide-for-new-topcoder-community-members/</loc></url>
+<url><loc>http://help.topcoder.com/faqs/general-help/</loc></url>
+<url><loc>http://help.topcoder.com/general-help/getting-paid/</loc></url>
+</urlset>

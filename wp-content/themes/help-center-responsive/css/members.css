@@ -1,0 +1,323 @@
+/*About Us page*/
+.pageView #mainContent{
+    background: #fff;
+}
+.pageView #hero{
+    padding-bottom: 0;
+}
+.pageView #hero .tracksInfo{
+     padding-top: 0;
+}
+.pageView #hero .trackInfo{   
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    -moz-transition-duration: .3s; -webkit-transition-duration: .3s; transition-duration: .3s;
+}
+.pageView #hero .trackInfo:hover{
+    background: #D7F5FF;
+    
+}
+.pageView #hero .trackInfo i {
+    height: 89px;
+    width: 89px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    background: url(../i/ico-contact.png) no-repeat;
+    background-position: 0 0;
+}
+.pageView #hero .trackInfo.visitHelp i{
+    background-position: 0 -150px;
+}
+.pageView #hero .trackInfo.support i{
+    background-position: 0 -300px;
+}
+
+.pageViewForm{
+    width: 408px;
+    margin: 0 auto;
+}
+    .pageViewForm .row {
+        margin-bottom: 20px;
+    }
+    .pageViewForm .row label{
+        display: inline-block;
+        padding-bottom: 5px;   
+        text-indent: 4px;
+    }
+    .pageViewForm .row .val input{
+        width: 394px;
+        background: #fff;
+        border: 1px solid #e1e3e3;
+        height: 18px;
+        line-height: 18px;
+    }
+    .pageViewForm .textarea{
+        padding: 5px;
+        margin: 0;
+        border: 1px solid #e1e3e3;
+        border-radius: 4px;
+        width: 396px;
+        height: 128px;
+    }
+    .pageViewForm .action{
+        text-align: center;        
+    }
+        .pageViewForm .action .btn{
+            width: 100px;            
+        }
+    .pageViewForm .rowCap{
+        position: relative;
+    }
+    .pageViewForm .rowCap .refersh{
+        position: absolute;
+        background: url(../i/ico-refresh.png) no-repeat;
+        height: 21px;
+        width: 23px;
+        right: 7px;
+        top: 48px;
+    }
+     .pageViewForm .rowCap img{
+         margin-bottom: 4px;
+     }
+.pageView .pageInfo{
+    font-size: 18px;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+    padding: 20px 135px 22px;
+    position: relative;
+    line-height: 24px;
+    margin: 0 0 27px 0;
+    background: #17A6D6 url(../i/shadow.png) 50% 0 no-repeat;
+} 
+    .pageView .pageInfo .point{
+        width: 33px;
+        height: 17px;
+        position: absolute;
+        left: 50%;
+        margin-left: -16px;
+        bottom: -17px;
+    
+        background: url(../i/point.png) no-repeat;
+        z-index: 1;
+}
+    .pageView .pageInfo.imgDataLayout{
+       display: block;    
+       padding: 38px 0 0;
+    }
+         .pageInfo.imgDataLayout .imgWrap{
+            width: 555px;
+            min-height: 312px; 
+            float: left;
+         }
+         .pageInfo.imgDataLayout .imgWrap img{
+             max-height: 312px;
+             max-width: 555px;
+         }
+         .pageInfo.imgDataLayout h2{
+             color: #fff;
+             font-size: 30px;
+             padding-bottom: 10px;
+         }
+         .pageInfo.imgDataLayout .info{
+            margin-left: 582px; 
+            font-size: 14px;
+            line-height: 24px;
+            text-align: left;
+         
+            min-height: 318px;
+        
+            padding-bottom: 30px;
+}
+         .pageInfo.imgDataLayout .info p{
+             margin-bottom: 24px;
+         }
+    .pageView .pageHeading h1{
+        font-size: 35px;
+        font-weight: normal;
+        color: #474747;
+        text-transform: uppercase;
+        padding-left: 74px;
+        min-height: 64px;
+        line-height: 64px;
+        background: url(../i/ico-pages.png) no-repeat;
+        background-position: 0 0;
+        margin: 25px 0; 
+    }
+    .pageView .pageHeading.aboutPage h1{
+        background-position: 0 -100px;
+    }
+
+.teamView{
+    display: block;
+}
+    .teamView h2{
+        color: #0071bc;
+        font-size: 30px;
+        text-align: center;
+    }
+    .teamView .members{
+        display: block;
+        overflow: hidden;
+    
+        width: 825px;
+        margin: 0 auto;
+}
+    .teamView .members .member{
+        float: left;
+        width: 150px;
+        height: 200px;
+        padding: 0 62px;
+        text-align: center;    
+        margin-top: 25px;
+}
+    .teamView .members .member img{
+        display: block;
+        height: 122px;
+        width: 122px;
+        border-radius: 75px;
+        border: 1px solid #dadcdc;    
+        margin: 0 auto 11px;
+        position: relative;
+}
+    .teamView .members .member .name{
+        font-size: 18px;
+        color: #0071bc;        
+        display: inline-block;
+        padding-bottom: 8px;
+    }
+    .teamView .members .member .name:hover{
+        color: #40A6EB;
+    }
+    .teamView .members .member .designation{
+        color: #666666;
+    }
+
+/* Contact Us Page */
+.contact #hero{
+    padding-bottom: 18px;
+}
+.contact #hero .container{
+	padding: 20px 0 22px;
+	min-height:60px;
+}
+.contact #hero .tracksInfo{
+     padding-top: 0;
+}
+.contact #hero .trackInfo{   
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    -moz-transition-duration: .3s; -webkit-transition-duration: .3s; transition-duration: .3s;
+}
+.contact #hero .trackInfo:hover{
+    background: #D7F5FF;
+    
+}
+.contact #hero .trackInfo.register{
+    margin-left: 0;
+}
+.contact #hero .trackInfo i {
+    height: 89px;
+    width: 89px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    background: url(../i/ico-contact.png) no-repeat;
+    background-position: 0 0;
+}
+.contact #hero .trackInfo.visitHelp i{
+    background-position: 0 -150px;
+}
+.contact #hero .trackInfo.support i{
+    background-position: 0 -300px;
+}
+
+.contactForm{
+    width: 408px;
+    margin: 0 auto;
+}
+    .contactForm .row {
+        margin-bottom: 20px;
+    }
+    .contactForm .row label{
+        display: inline-block;
+        padding-bottom: 5px;   
+        text-indent: 4px;
+    }
+    .contactForm .row .val input{
+        width: 394px;
+        background: #fff;
+        border: 1px solid #e1e3e3;
+        height: 18px;
+        line-height: 18px;
+    }
+    .contactForm .textarea{
+        padding: 5px;
+        margin: 0;
+        border: 1px solid #e1e3e3;
+        border-radius: 4px;
+        width: 396px;
+        height: 128px;
+    }
+    .contactForm .action{
+        text-align: center;
+        position:relative;
+    }
+        .contactForm .action .btn{
+            width: 100px;
+            position:relative;
+        }
+.contact .contactInfo{
+    font-size: 18px;
+    color: #fff;
+    line-height: 18px;
+    text-align: center; 
+    position: relative;
+    line-height: 24px;
+    margin: 0 0 27px 0; 
+    background: #17A6D6 url(../i/shadow.png) 50% 0 no-repeat;
+} 
+    .contact .contactInfo .point{
+        width: 33px;
+        height: 17px;
+        position: absolute;
+        left: 50%;
+        margin-left: -16px;
+        bottom: -17px; 
+        background: url(../i/point.png) no-repeat;
+        z-index: 1;
+} 
+    .contact .pageHeading h1{
+        font-size: 35px;
+        font-weight: normal;
+        color: #474747;
+        text-transform: uppercase;
+        padding-left: 74px;
+        min-height: 64px;
+        line-height: 64px;
+        background: url(../i/ico-cs.png) 0 0 no-repeat;
+        margin: 25px 0; 
+    }
+    
+.contactForm .errormsg,
+.contactForm .error{
+    color: #f00;
+}
+.contactForm .row.error .val input,
+.contactForm .row.error .val .textarea{
+    color: #f00;
+    border-color: #f00;
+}
+
+.descBox{
+	display:none;
+}
+
+.descBox p{
+	margin-bottom:10px;
+}
+
+.activeBox{
+	display:block;
+}

@@ -1,0 +1,429 @@
+@media (max-width: 1019px) {
+    .hideMob{
+        display: none !important;
+    }
+    .searchSupport {
+        text-align: center;
+    }
+        .searchSupport .search{
+            width: 100%;
+            margin-right: 0;
+            text-align: left;
+            float: none;
+        }
+        .searchSupport .search .loading{
+            width: auto;
+            right: 0;
+            margin-left: 0;
+            top: 34px;
+            z-index: 100;
+            left: 0;
+            display: border-box;
+        }
+        .searchSupport .search input{
+            width: 100%;
+            height: 34px;
+            box-sizing: border-box;
+            
+        }
+        .searchSupport .emailSupport{
+            float: none;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+    .searchSupport .emailPopup{
+        width: 280px;
+        padding: 5px 10px 0;
+        top: 82px;
+        right: 50%;
+        margin-right: -150px;
+    }
+
+    .ui-autocomplete{
+        max-width: none;
+        width: auto !important;
+        margin-right: 20px;
+    }
+    .uniAndCommonTopics .university tbody td.pic,
+    .uniAndCommonTopics .university tbody td{
+        padding-top: 10px;
+        padding-bottom: 5px;
+        height: auto;
+    }
+    .uniAndCommonTopics tbody td{
+        height: 85px;
+        padding-top: 5px;
+        padding-right: 15px;
+    }
+        .uniAndCommonTopics .university tbody td .date{
+            padding-right: 0;
+        }
+    .uniAndCommonTopics tbody td.pic{
+        padding-top: 0;
+    }
+    /*help container*/
+    .helpContainer{
+        margin: 0;
+    }
+    .grid .grid-2-1{
+        float: none;
+    }
+    .grid .grid-3-1, .grid .grid-3-2 {
+        width: auto;
+        float: none;
+        display: block;
+        padding-left: 0;
+    }
+
+    .leftMenu{
+        min-height: 36px;
+        background: url("../i/left-nav-bg-bottom.png") no-repeat 50% 100%;
+        padding-bottom: 17px;
+        position: relative;
+    }
+        .leftMenu li{
+            float: left;
+            width: 16.66%;
+            border-bottom: none;
+        }
+            .leftMenu li a{
+                font-size: 0;
+                padding-left: 0;
+                border-left: 1px solid #fff;
+            }
+            .leftMenu li:first-child a{
+                border-left: none;
+            }
+                .leftMenu li a i{
+                    width: 100%;
+                }
+    .leftMenu ul.sectionMenu{
+        float: none;
+        overflow: hidden;
+    }
+        .leftMenu ul.section{
+            position: absolute;
+            top: 36px;
+            z-index: 99;
+            left: 0;
+            right: 0;
+            background: url("../i/left-nav-bg-bottom.png") no-repeat scroll 50% 100%;
+            padding-bottom: 17px;
+            display: none;
+        }
+        .leftMenu ul.section li{
+            border-left: none;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            background: #fff;
+        }
+        .leftMenu ul.section li.hasSubTopics{
+            background: #fff url("../i/down-arrow.png") no-repeat 6px 17px;
+        }
+            .leftMenu li.topics a{
+                font-size: 14px;
+                padding-left: 20px;
+            }
+            .leftMenu li.sectionName a{
+                font-size: 18px;
+                color: #fff;
+            }
+            .leftMenu li.topics ul{
+                border-top: none;
+            }
+                .leftMenu li.topics ul li,
+                .leftMenu li.topics ul li.last{
+                    background: none;
+                    border-top: 1px solid #eee;
+                    border-bottom: none;
+                }
+                    .leftMenu li.topics ul li a{
+                        padding-left: 19px;
+                    }
+
+        .breadcrumb{
+            display: none;
+        }
+        .breadcrumb.mobi{
+            display: block;
+            margin: -17px 8px 0;
+        }
+        .faqs{
+            margin: -8px 8px 9px;
+        }
+            .faqs .banners{
+                border-right: none;
+                float: none;
+                width: auto;
+            }
+            .faq h3 a{
+                font-weight: bold;
+            }
+                .faqs .banner{
+                    position: relative;
+                }
+                    .faqs .banner img{
+                        position: absolute;
+                        margin-left: -220px;
+                        left: 50%;
+                        top: 0;
+                    }
+            .faqs .bannerIcons li{
+                width: 16.66%;
+                text-align: center;
+            }
+            .faqs .bannerIcons a.home, .faqs .bannerIcons a{
+                width: 100%;
+            }
+    /*university and topics*/
+    .uniAndCommonTopics{
+        margin: 8px 8px 0;
+        padding-top: 0;
+        text-align: center;
+    }
+        .uniAndCommonTopics table.university,
+        .uniAndCommonTopics table.topics{
+            float: none;
+            width: 100%;
+        }
+        .uniAndCommonTopics .viewAll{
+            padding:  5px 0 15px;
+        }
+        .uniAndCommonTopics .topics tbody td{
+            padding-right: 0;
+        }
+        .uniAndCommonTopics .topics tbody td.details{
+            padding-right: 15px;
+            text-align: right;
+            padding-left: 0;
+            width: 44px;
+        }
+
+    /*member tips*/
+    .memberTips{
+        padding: 0 8px 12px;
+        margin-top: 0;
+    }
+        .memberTips h2{
+            padding: 15px 38px;
+        }
+        .memberTips .tips{
+            float: none;
+            width: auto;
+            margin: 0 auto 8px;
+        }
+
+    .memberTips .submitTipBtn .btn{
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    /*section page styles*/
+    .sectionBanner{
+        display: block;
+        padding: 0;
+        margin: 0 8px 8px;
+    }
+        .sectionBanner .banner,
+        .sectionBanner .latest{
+            float: none;
+            width: auto;
+        }
+        .sectionBanner .banner.design{
+            background: url("../i/section-banner-design-mob.jpg") no-repeat 50% 0;
+        }
+        .sectionBanner .banner.copilot{
+            background: url("../i/section-banner-copilot.jpg") no-repeat 50% 0;
+        }
+        .sectionBanner .banner.competition{
+            background: url("../i/compettion-type-banner-mob.jpg") no-repeat 50% 0;
+            height: 227px;
+        }
+        .sectionBanner .banner.memberTip{
+            background: #0071bc url("../i/member-tip-banner-mob.gif") no-repeat 50% 0;
+            height: 227px;
+            text-align: center;
+        }
+            .sectionBanner .banner.memberTip a.submitTip{
+                position: relative;
+                top: 125px;
+                right: auto;
+            }
+        .sectionBanner .latest table{
+            border-left: 1px solid #e7e7e7;
+        }
+
+    /*most popular*/
+    .subSection #gridView {
+        display: none !important;
+    }
+    .subSection #tableView {
+        display: block !important;
+    }
+
+    .subSection{
+        margin: 0 8px;
+    }
+    .subSection.memberTip header{
+        border-bottom: none;
+    }
+        .subSection .optionContainer,
+        .subSection.memberTip .optionContainer{
+            position: relative;
+            width: auto;
+            top: auto;
+            right: auto;
+            padding: 4px 0 0;
+            text-align: left;
+        }
+            .subSection .optionContainer .optionBtn{
+                margin: 7px 5px 0 0;
+            }
+        /*view change*/
+        header aside.rt{
+            display: none;
+        }
+        .subSection #tableView{
+            padding-top: 15px;
+        }
+        .subSection #tableView .grid-3-1,
+        .subSection #tableView .grid-3-2{
+            width: 100%;
+        }
+            .subSection #tableView .grid-3-1 article,
+            .subSection #tableView .grid-3-2 article{
+                width: auto;
+                float: none;
+            }
+                .subSection #tableView.viewTab .grid-3-1 .content,
+                .subSection #tableView.viewTab .grid-3-2 .content {
+                     height: auto;
+                     padding: 0 13px;
+                }
+                .subSection #tableView.viewTab .grid-1 .content{
+                    padding-right: 24%;
+                    padding-left: 13px;
+                }
+                .subSection.memberTip #tableView.viewTab .grid-1 .content{
+                    padding: 0 13px;
+                }
+                .subSection.faqDetails #tableView.viewTab .grid-1 .content{
+                    padding-right: 13px;
+                }
+                .subSection #tableView.viewTab .grid-3-2 .date{
+                    padding: 12px 15px;
+                }
+                    .subSection #tableView.viewTab .grid-3-1 .content a {
+                        width: 276px;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    .subSection #tableView.viewTab .grid-3-1 .content a img{
+                        width: 276px;
+                        height: 155px;
+                    }
+                .subSection #tableView.viewTab .grid-1 .like{
+                    right: 10px;
+                }
+
+                .subSection #tableView.viewTab article.searchMsg{
+                    text-align: center;
+                }
+
+    /*sub navs*/
+    .subSection .subNav,
+    .subSection .subTypes{
+        padding: 10px;
+    }
+
+    /*related section*/
+    .relatedSection{
+        padding-top: 15px;
+        margin: 0 8px 25px;
+    }
+        .relatedSection article{
+            float: none;
+            width: auto !important;
+        }
+        .relatedSection article.related{
+            margin: 0 0 10px;
+        }
+        .relatedSection article.video{
+            border-left: 1px solid #e7e7e7;
+            border-top: none;
+            height: 180px;
+        }
+            .relatedSection article.video a {
+                display: block;
+                width: 266px;
+                margin: 0 auto;
+            }
+                .relatedSection article.video a img{
+                    width: 266px;
+                    height: 180px;
+                }
+    /*data Changes (prev next)*/
+    .dataChanges{
+        padding: 10px 0 18px !important;
+    }
+        .dataChanges .viewAll{
+            display: none;
+        }
+        .designPage .dataChanges .viewAll{
+            display: block;
+        }
+
+    /*faq home*/
+    .faqsSection header{
+        display: none
+    }
+    .faqList .grid-3-1 a{
+        float: none !important;
+        display: block !important;
+        margin: 0 !important;
+        width: auto !important;
+        height: 45px !important;
+        line-height: 45px !important;
+        padding: 0 0 0 52px !important;
+        border-top: none !important;
+        text-align: left !important;
+        font-size: 14px;
+        background-image: url("../i/faqs-icon-sml.gif");
+        background-repeat: no-repeat;
+    }
+    .faqList .grid-3-1:first-child a{
+        border-top: 1px solid #e7e7e7 !important;
+    }
+    .faqList .grid-3-1 a.design{
+        background-position: 0 0;
+    }
+    .faqList .grid-3-1 a.development{
+        background-position: 0 -45px;
+    }
+    .faqList .grid-3-1 a.algorithm{
+        background-position: 0 -90px;
+    }
+    .faqList .grid-3-1 a.copilot{
+        background-position: 0 -135px;
+    }
+    .faqList .grid-3-1 a.university{
+        background-position: 0 -180px;
+    }
+    .faqList .grid-3-1 a.question{
+        background-position: 0 -225px;
+    }
+
+    /*modal styles*/
+    .modal{
+        left: 8px !important;
+        right: 8px !important;
+        margin-left: 0 !important;
+        width: auto !important;
+    }
+        .modal .content .grid-2-1{
+            width: 100%;
+            float: none;
+        }
+}

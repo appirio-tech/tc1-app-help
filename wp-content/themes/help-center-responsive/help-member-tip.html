@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TopCoder - CloudSpokes</title>
+    <!-- meta -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <!-- css -->
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style-responsive.css"/>
+    <link rel="stylesheet" href="css/style-help.css"/>
+    <link rel="stylesheet" href="css/style-help-responsive.css"/>
+    <link rel="stylesheet" href="css/coder.css"/>
+
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="css/ie7.css"/>
+    <![endif]-->
+
+    <!-- js -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/ie.css"/>
+    <![endif]-->
+
+    <!--[if IE 9]>
+    <script src="js/pie-ie9.js"></script>
+    <![endif]-->
+
+    <script src="js/jQuery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+    <script src="js/jquery.bxslider.js" type="text/javascript"></script>
+    <script src="js/jquery.selectbox-0.2.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script.help.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="wrapper">
+<nav class="sidebarNav mainNav onMobi newUser">
+    <ul class="root">
+        <li><a href="javascript:;"><i></i>Customer Solutions</a>
+            <ul class="child">
+                <li><a href="#"><i></i>Sub Navigation</a></li>
+                <li><a href="#"><i></i>Sub Navigation</a></li>
+                <li><a href="#"><i></i>Sub Navigation</a></li>
+                <li><a href="#"><i></i>Sub Navigation</a></li>
+                <li><a href="#"><i></i>Sub Navigation</a></li>
+                <li><a href="#"><i></i>Sub Navigation</a></li>
+                <li><a href="#"><i></i>Sub Navigation</a></li>
+            </ul>
+        </li>
+        <li><a href="community.html"><i></i>Community</a>
+            <ul class="child">
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+            </ul>
+        </li>
+        <li><a href="javascript:;"><i></i>Blog</a>
+            <ul class="child">
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+            </ul>
+        </li>
+        <li><a href="help-home.html"><i></i>Help</a>
+            <ul class="child">
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+                <li><a href="#"><i></i>Sub Nav</a></li>
+            </ul>
+        </li>
+        <li class="notLogged"><a href="javascript:;" class="actionLogin"><i class="disabled"></i>Log In</a></li>
+        <li class="notLogged"><a href="javascript:;"><i></i>REGISTER</a></li>
+        <li class="userLi isLogged">
+            <div class="userInfo">
+                <div class="userPic">
+                    <img src="i/userpic-alt.png" alt="usrname"/>
+                </div>
+                <div class="userDetails">
+                    <a href="#" class="coder">MyHandle</a>
+
+                    <p class="country">United States</p>
+                    <a href="#" class="link">My Profile</a>
+                    <a href="#" class="link">My Dashboard </a>
+                    <a href="javascript:;" class="link actionLogout">Log Out </a>
+
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+<!-- /.sidebarNav -->
+<header id="navigation" class="newUser">
+    <div class="container">
+        <h1 class="logo">
+            <a href="home.html"></a>
+        </h1>
+        <nav id="mainNav" class="mainNav">
+            <ul class="root">
+                <li><a href="javascript:;">Customer Solutions</a>
+                    <ul class="child">
+                        <li><a href="#">Sub Navigation</a></li>
+                        <li><a href="#">Sub Navigation</a></li>
+                        <li><a href="#">Sub Navigation</a></li>
+                        <li><a href="#">Sub Navigation</a></li>
+                        <li><a href="#">Sub Navigation</a></li>
+                        <li><a href="#">Sub Navigation</a></li>
+                        <li><a href="#">Sub Navigation</a></li>
+                    </ul>
+                </li>
+                <li><a href="community.html">Community</a>
+                    <ul class="child">
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">Blog</a>
+                    <ul class="child">
+                        <li><a href="#">Sub Nav Sub Nav Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                    </ul>
+                </li>
+                <li><a href="help-home.html">Help</a>
+                    <ul class="child">
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                        <li><a href="#">Sub Nav</a></li>
+                    </ul>
+                </li>
+                <li class="onReg"><a href="javascript:;" class="actionLogout">Log Out</a></li>
+                <li class="noReg"><a href="javascript:;" class="actionLogin">Log In</a></li>
+            </ul>
+        </nav>
+        <a href="javascript:;" class="onMobi onReg linkLogout actionLogout">Log Out</a>
+        <a href="javascript:;" class="onMobi noReg linkLogin actionLogin">Log In</a>
+        <span class="btnRegWrap noReg"><a href="javascript:;" class="btn btnRegister">Register</a> </span> <span
+            class="btnAccWrap onReg"><a href="javascript:;" class="btn btnAlt btnMyAcc">
+        My Account<i></i>
+    </a></span>
+
+        <div class="userWidget">
+            <div class="details">
+                <div class='userPic'>
+                    <img alt="Username" src="i/userpic.png"/>
+                </div>
+                <div class="userDetails">
+                    <a href="#" class="coder coderTextBlue">MyHandle</a>
+
+                    <p class="country">United States</p>
+
+                    <p class="lbl">Member Since:</p>
+
+                    <p class="val">2013</p>
+
+                    <p class="lbl">Total Earnings :</p>
+
+                    <p class="val">$500,000</p>
+                </div>
+            </div>
+            <div class="action">
+                <a href="#">My Profile</a>
+                <a href="#">My Dashboard </a>
+                <a href="javascript:;" class="linkAlt actionLogout">Log Out</a>
+            </div>
+        </div>
+        <!-- /.userWidget -->
+    </div>
+</header>
+<!-- /#header -->
+<div class="content">
+<div id="main">
+    <!--search and support area-->
+    <div class="searchSupport">
+        <div class="container">
+            <div class="search">
+                <a href="help-search-result.html" class="searchBtn"> </a>
+                <input type="text" id="helpSearch" class="searchInput" placeholder="Search Help Center"/>
+            </div>
+            <a href="javascript:" class="btn btnAlt emailSupport">Email Support Team</a>
+
+            <div class="clear"></div>
+            <!--emailPopup-->
+            <div class="emailPopup">
+                Do you need assistance? If your answer can't be found in the Help Center, please email us at 
+                <a href="mailto:support@topcoder.com">support@topcoder.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!--main content-->
+    <div class="container grid grid-float helpContainer">
+        <div class="grid-3-1">
+            <!--left menu-->
+            <nav class="leftMenu">
+                <!--section Menu-->
+                <ul>
+                    <li>
+                        <a href="help-section-design.html" class="design"><i></i>Design</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="development"><i></i>Development</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="algorithm"><i></i>Data / Algorithms</a>
+                    </li>
+                    <li>
+                        <a href="help-section-copilot.html" class="copilot"><i></i>Copilots / Reviewers</a>
+                    </li>
+                    <li>
+                        <a href="javascript:" class="university"><i></i>TopCoder University</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="grid-3-2">
+            <!--breadcrumb-->
+            <div class="breadcrumb mobi">
+                <a href="help-home.html" class="home">Homepage</a>
+                <span class="curr"><i></i>Member Tips</span>
+            </div>
+
+            <!--section banner-->
+            <section class="sectionBanner">
+                <div class="banner memberTip">
+                    <div class="textContent">
+                        <h3>Share Your Knowledge Now</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore </p>
+                    </div>
+                    <a href="javascript:" class="btn submitTip">Submit Tip Now</a>
+                </div>
+            </section>
+
+            <!--sub topic section-->
+            <section class="subSection memberTip">
+                <header>
+                    <div class="optionContainer">
+                        <a class="btn optionBtn check" href="javascript:;">All</a>
+                        <a class="btn optionBtn" href="javascript:;">Design</a>
+                        <a class="btn optionBtn" href="javascript:;">Development</a>
+                        <a class="btn optionBtn" href="javascript:;">Algorithm</a>
+                        <a class="btn optionBtn" href="javascript:;">Copilot</a>
+                        <a class="btn optionBtn" href="javascript:;">TC university</a>
+                    </div>
+                    <aside class="rt">
+                            <span class="views">
+                                <a class="gridView" href="#gridView"></a>
+                                <a class="listView isActive" href="#tableView"></a>
+                            </span>
+                    </aside>
+                </header>
+                <!--table view-->
+                <div id="tableView" class="viewTab">
+                    <div class="grid-1">
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt  magna aliqua. elit sed magna aliqua Lorem ipsum dolor sit amet consectetur adipisicing incididunt  magna aliqua. elit sed magna aliqua</p>
+
+                                <div class="memberAndLike">
+                                    <a href="javascript:" class="member coderTextOrange">membername</a>
+                                    <a href="javascript:" class="likes">46</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt  magna aliqua. elit sed magna aliqua Lorem ipsum dolor sit amet consectetur adipisicing incididunt  magna aliqua. elit sed magna aliqua</p>
+
+                                <div class="memberAndLike">
+                                    <a href="javascript:" class="member coderTextOrange">membername</a>
+                                    <a href="javascript:" class="likes">46</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt  magna aliqua. elit sed magna aliqua Lorem ipsum dolor sit amet consectetur adipisicing incididunt  magna aliqua. elit sed magna aliqua</p>
+
+                                <div class="memberAndLike">
+                                    <a href="javascript:" class="member coderTextOrange">membername</a>
+                                    <a href="javascript:" class="likes">46</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt  magna aliqua. elit sed magna aliqua Lorem ipsum dolor sit amet consectetur adipisicing incididunt  magna aliqua. elit sed magna aliqua</p>
+
+                                <div class="memberAndLike">
+                                    <a href="javascript:" class="member coderTextOrange">membername</a>
+                                    <a href="javascript:" class="likes">46</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt  magna aliqua. elit sed magna aliqua Lorem ipsum dolor sit amet consectetur adipisicing incididunt  magna aliqua. elit sed magna aliqua</p>
+
+                                <div class="memberAndLike">
+                                    <a href="javascript:" class="member coderTextOrange">membername</a>
+                                    <a href="javascript:" class="likes">46</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!--prev next-->
+                        <div class="dataChanges">
+                            <div class="lt">
+                                <a class="viewAll" href="javascript:;">View All</a>
+                            </div>
+                            <div class="rt">
+                                <a class="prevLink" href="#0">
+                                    <i></i> Prev
+                                </a>
+                                <a class="nextLink" href="#2">
+                                    Next <i></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--grid view-->
+                <div id="gridView" class="viewTab hide">
+                    <div class="grid-3-1 letCol">
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt magna aliqua. elit sed magna aliqua</p>
+                            </div>
+                            <div class="memberAndLike">
+                                <a href="javascript:" class="member coderTextOrange">membername</a>
+                                <a href="javascript:" class="likes">46</a>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt magna aliqua. elit sed magna aliqua</p>
+                            </div>
+                            <div class="memberAndLike">
+                                <a href="javascript:" class="member coderTextOrange">membername</a>
+                                <a href="javascript:" class="likes">46</a>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt magna aliqua. elit sed magna aliqua</p>
+                            </div>
+                            <div class="memberAndLike">
+                                <a href="javascript:" class="member coderTextOrange">membername</a>
+                                <a href="javascript:" class="likes">46</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="grid-3-1 centerCol">
+
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt magna aliqua. elit sed magna aliqua</p>
+                            </div>
+                            <div class="memberAndLike">
+                                <a href="javascript:" class="member coderTextOrange">membername</a>
+                                <a href="javascript:" class="likes">46</a>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt magna aliqua. elit sed magna aliqua</p>
+                            </div>
+                            <div class="memberAndLike">
+                                <a href="javascript:" class="member coderTextOrange">membername</a>
+                                <a href="javascript:" class="likes">46</a>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt magna aliqua. elit sed magna aliqua</p>
+                            </div>
+                            <div class="memberAndLike">
+                                <a href="javascript:" class="member coderTextOrange">membername</a>
+                                <a href="javascript:" class="likes">46</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="grid-3-1 rightCol">
+
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt magna aliqua. elit sed magna aliqua</p>
+                            </div>
+                            <div class="memberAndLike">
+                                <a href="javascript:" class="member coderTextOrange">membername</a>
+                                <a href="javascript:" class="likes">46</a>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt magna aliqua. elit sed magna aliqua</p>
+                            </div>
+                            <div class="memberAndLike">
+                                <a href="javascript:" class="member coderTextOrange">membername</a>
+                                <a href="javascript:" class="likes">46</a>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="content">
+                                <h3>Tips Title</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing incididunt magna aliqua. elit sed magna aliqua</p>
+                            </div>
+                            <div class="memberAndLike">
+                                <a href="javascript:" class="member coderTextOrange">membername</a>
+                                <a href="javascript:" class="likes">46</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="clear"></div>
+                    <!--prev next-->
+                    <div class="dataChanges">
+                        <div class="lt">
+                            <a class="viewAll" href="javascript:;">View All</a>
+                        </div>
+                        <div class="rt">
+                            <a class="prevLink" href="#0">
+                                <i></i> Prev
+                            </a>
+                            <a class="nextLink" href="#2">
+                                Next <i></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <article id="aboutContent">
+        <div class="container">
+            <section>
+                <h3>Customers</h3>
+
+                <p>
+                    Our customers are companies<br/> from many different industries
+                </p>
+            </section>
+            <section>
+                <h3>Community</h3>
+
+                <p>
+                    <span class="members">595,024</span> of the world's<br/> best minds competing
+                </p>
+            </section>
+            <section>
+                <h3>Challenges</h3>
+
+                <p>
+                    Welcome to an open market<br/>for your unique talents
+                </p>
+            </section>
+        </div>
+    </article>
+    <!-- /#aboutContent -->
+</div>
+<!-- /#main -->
+<footer id="footer">
+    <div class="container">
+        <nav>
+            <h4>Customer Solutions</h4>
+            <ul>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <h4>Blog</h4>
+            <ul>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+                <li><a href="#">Sub navigation</a></li>
+            </ul>
+        </nav>
+        <div class="connected">
+            <section class="updates">
+                <h4>Get Updates</h4>
+
+                <div class="row">
+                    <input type="email" class="email" placeholder="Your email address"/>
+                    <a href="javascript:;" class="btn">Submit</a>
+                </div>
+            </section>
+            <section class="social">
+                <h4>Get Connected</h4>
+                <ul>
+                    <li><a class="fb" href="#">FB</a></li>
+                    <li><a class="tw" href="#">TW</a></li>
+                    <li><a class="gp" href="#">GP</a></li>
+                    <li><a class="in" href="#">IN</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="clear"></div>
+    </div>
+</footer>
+<!-- /#footer -->
+</div>
+</div>
+<!-- /#wrapper -->
+
+<!--modal overlay-->
+<div class="modalOverlay"></div>
+<!--ask question dialog-->
+<div id="submitTip" class="modal">
+    <header>Submit a Tip</header>
+    <div class="content">
+        <div class="grid-2-1">
+            <h4>Guidelines</h4>
+            <ul class="guide">
+                <li>Must be under 255 character</li>
+                <li>Must be written in english</li>
+                <li>Must be helpful, positive, encouraging - should not be written in a negative way</li>
+            </ul>
+        </div>
+        <div class="grid-2-1">
+            <h4>Examples</h4>
+            <ul class="examples">
+                <li class="correct">"Be sure to beign uploading your submission at least 2 hours before the deadline just in case you have connection issues." </li>
+                <li class="wrong">"you will miss the deadline in you think you can upload your files only a few minutes before the dedline."</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+
+        <select>
+            <option value="section">- Select Section -</option>
+            <option value="design">Design</option>
+            <option value="development">Development</option>
+            <option value="algorithm">Data / Algorithms</option>
+            <option value="copilot">Copilots / Reviewers</option>
+            <option value="university">Topcoder University</option>
+        </select>
+        <select>
+            <option value="topic">- Select Topic -</option>
+            <option value="topic1">Topic1</option>
+            <option value="topic2">Topic2</option>
+            <option value="topic3">Topic3</option>
+        </select>
+        <div class="inputCnt">
+            <input type="text" placeholder="Tip Title"/>
+        </div>
+        <div class="inputCnt">
+            <textarea cols="5" rows="5" placeholder="Tip"></textarea>
+            <div class="charLeft">
+                <span class="count">255</span> Characters Left
+            </div>
+        </div>
+        <!--button bar-->
+        <div class="buttonBar">
+            <a href="javascript:" class="btn btnAlt modalClose">Cancel</a>
+            <a href="javascript:" class="btn submitBtn">Submit</a>
+        </div>
+    </div>
+</div>
+<!--submit success modal-->
+<div id="submitSuccess" class="modal">
+    <header>Submit a Tip</header>
+    <div class="content">
+        <div class="submitSuccessMsg">
+            Thanks for Submitting Lorem Ipsum ...
+        </div>
+        <!--button bar-->
+        <div class="buttonBar">
+            <a href="javascript:" class="btn modalClose">OK</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

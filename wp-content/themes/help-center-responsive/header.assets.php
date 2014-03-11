@@ -34,5 +34,6 @@
 <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.customSelect.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/scripts.js" type="text/javascript"></script>
 <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/register-login.js" type="text/javascript"></script>
+<script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/init-header.js" type="text/javascript"></script>
 <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/script.help.js" type="text/javascript"></script>
 

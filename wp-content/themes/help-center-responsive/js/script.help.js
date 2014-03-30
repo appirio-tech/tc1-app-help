@@ -86,7 +86,7 @@ $(document).ready(function() {
     
     //append menu
     if($('.landingMenu .current-menu-item .communitymembers').length <= 0 ){
-        if($('.landingMenu .current-menu-ancestor .communitymembers').length > 0){
+        if($('.landingMenu .current-menu-ancestor .communitymembers').length > 0 || $('.landingMenu .current-page-ancestor .communitymembers').length > 0){
             return false; 
         }
         if($('.leftMenu .section.topcoderuniversity li.current_page_item > a, .leftMenu .section.topcoderuniversity li.current-menu-parent > a, .leftMenu .section.topcoderuniversity li.current-menu-ancestor > a').length>0){
@@ -313,7 +313,9 @@ $(document).ready(function() {
     $('.subSection.designPage #tableView article:odd,.subSection.subTopics #tableView article:odd, .subSection.sectionCopilot #tableView article:odd, .subSection.faqDetails #tableView article:odd, .subSection.memberTip #tableView article:odd, .dataTable.university tbody tr:odd, .dataTable.topics tbody tr:odd, .sectionBanner .dataTable tbody tr:odd').addClass('alt');
     $('.subSection.faqsSection #tableView article:even, .subSection.searchResult #tableView article:even').addClass('alt');
 
-
+    if($(".current-menu-item").length == 0 && $(".landingMenu").length > 0){
+      $(".landingMenu").addClass("page-not-included-in-menu");
+    }
 });
 
 /*show modal*/

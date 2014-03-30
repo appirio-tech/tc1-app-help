@@ -751,7 +751,6 @@ class help_submenu_walker extends Walker_Nav_Menu {
 				'child' 
 		);
 		$class_names = implode ( ' ', $classes );
-		
 		// build html
 		$output .= "\n" . $indent . '<ul class="' . $class_names . '">' . "\n";
 	}
@@ -764,7 +763,13 @@ class help_submenu_walker extends Walker_Nav_Menu {
 		// passed classes
 		$classes = empty ( $item->classes ) ? array () : ( array ) $item->classes;
 		$class_names = esc_attr ( implode ( ' ', apply_filters ( 'nav_menu_css_class', array_filter ( $classes ), $item ) ) );
-		
+
+  $parents = get_post_ancestors($wp_query->post->ID);
+  if(count($parents) > 1){
+    if($item->object_id == get_page($parents[0])->ID){
+      $class_names .= " direct-parent";
+    }
+  }
 		// build html
 		$class_names .= " general-help-depth".$depth;
 		$output .= $indent . '<li class="' . $class_names . '">';

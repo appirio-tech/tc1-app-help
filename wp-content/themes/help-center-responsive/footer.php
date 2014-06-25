@@ -56,7 +56,7 @@ $blog_posts = get_posts( $blog_posts_args );
 				
 				<?php
 				 include_once(ABSPATH . WPINC . '/rss.php');
-				$url = "http://beta.topcoder.com/feed/?post_type=blog";
+				$url = "http://www.topcoder.com/feed/?post_type=blog";
 				$rss = fetch_rss($url);
 				#print_r($rss);
 				$maxitems = 5;
@@ -65,7 +65,7 @@ $blog_posts = get_posts( $blog_posts_args );
 				foreach ($rss->items as $post) :
 				$i++;
 				$pubdate = strftime("%B %d", strtotime($post['pubdate']));
-				if ( $i > 3 ) break;
+				if ( $i > 2 ) break;
 				?>
 				<div class="footerBlogEntry">
 					<a href="<?php echo $post['link']?>" ><?php echo $pubdate; ?></a> <?php echo wrap_content_strip_html(wpautop($post['summary']), 150, true,'\n\r',''); ?>

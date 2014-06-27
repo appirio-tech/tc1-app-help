@@ -131,7 +131,7 @@ $photoLink = 'http://community.topcoder.com/i/m/nophoto_login.gif';
 				<div class="headerTopRightMenu">
 					<div class="headerTopRightMenuLink logIn">
 						<div class="text"><a href="javascript:;" class="<?php if ( $user_id == '' ) { echo 'actionLogin'; } else { echo 'actionLogout'; }?>"><?php if ( $user_id == '' ) { echo 'Log In'; } else { echo 'Log Out'; }?></a></div>
-						<!-- <div class="icon"></div> -->
+						<div class="icon"></div>
 						<div class="clear"></div>
 					</div>
 					<div class="separator"></div>
@@ -144,14 +144,12 @@ $photoLink = 'http://community.topcoder.com/i/m/nophoto_login.gif';
 						<div class="text"><a href="http://help.topcoder.com">Help Center</a></div>
 						<div class="clear"></div>
 					</div>
-<!--
 					<div class="separator beforeSearch"></div>
 					<div class="headerTopRightMenuLink search last">
 						<div class="icon"></div>
-						<div class="text"><a href="javascript:;">Search</a></div>
+						<div class="text"><a href="http://www.topcoder.com/search">Search</a></div>
 						<div class="clear"></div>
 					</div>
--->
 					<div class="clear"></div>
 				</div>
 				<div class="clear"></div>

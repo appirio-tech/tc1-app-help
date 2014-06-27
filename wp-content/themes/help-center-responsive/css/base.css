@@ -361,7 +361,7 @@ em{
         background-position: 0 -12px;              
     }
 #navigation .noReg{
-    display: none;
+    /* display: none; */
 }
 #navigation.newUser .onReg{
     display: none;
@@ -613,7 +613,7 @@ em{
 		padding-left: 8px;
 		height: 23px;
 		padding-right: 10px;
-		padding-top: 10px;
+		padding-top: 11px;
 	}
 		.headerTopRightMenu .headerTopRightMenuLink.last{
 			border-right: none;
@@ -649,7 +649,6 @@ em{
 				height: 13px;
 				margin-top: 7px;
 				width: 8px;
-				background: url(../i/login-arrow.png) no-repeat;
 				background-position: 0 0;
 				float: left;
 				margin-left: 4px;
@@ -660,7 +659,7 @@ em{
 		   background: url(../i/search-icon.png) no-repeat;
 		   background-position: 0 0;
 		   float: left;
-		   margin-top: 3px;
+		   margin-top: 2px;
 		   margin-right: 4px;
 		   margin-left: 3px;
 			}
@@ -679,3 +678,14 @@ em{
 			.headerTopRightMenu .separator.beforeSearch{
 				margin-right: 0px;
 			}
+/* fix header */
+#navigation{
+    font-size: 15px;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+#navigation .logo {
+    margin-left: 20px;
+}
+#navigation .btn, a.btn{
+    font-size: 15px;
+}

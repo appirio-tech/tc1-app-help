@@ -201,7 +201,7 @@ $photoLink = 'http://community.topcoder.com/i/m/nophoto_login.gif';
 				</div>
 				</div>
 				<?php if ( $user_id == '' ) : ?>
-				<span class="btnRegWrap noReg"><a href="javascript:;" class="btn btnRegister">Register</a> </span>
+				<span class="btnRegWrap noReg"><a href="javascript:;" class="btn btnRegister">Sign Up</a> </span>
 				<?php endif; ?>
 				<!-- /.userWidget -->	
 			</div>

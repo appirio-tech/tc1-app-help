@@ -1299,6 +1299,13 @@
         .subSection .subTypes ul , .subSection .subTypes ol{
             margin-left: 20px;
         }
+		
+		.subSection .subTypes ul  li, 
+		.subSection .subTypes ol   li{
+            line-height: 22px;
+			margin-bottom: 6px; 
+        }
+		
         .subSection .subTypes p{
             padding: 10px 0;
             line-height: 23px;

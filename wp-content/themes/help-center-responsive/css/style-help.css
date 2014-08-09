@@ -1300,8 +1300,8 @@
             margin-left: 20px;
         }
 		
-		.subSection .subTypes ul  li, 
-		.subSection .subTypes ol   li{
+        .subSection .subTypes ul  li, 
+        .subSection .subTypes ol   li{
             line-height: 22px;
 			margin-bottom: 6px; 
         }

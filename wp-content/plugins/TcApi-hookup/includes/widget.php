@@ -164,7 +164,7 @@ class Tops_Rank_Widget extends WP_Widget {
 			$arrRank = $arrTopRank->data;
 			if ($arrRank != null)
 			foreach ( $arrRank as $row ) :
-				$handleLink = get_bloginfo ( "siteurl" ) . "/member-profile/" . $row->handle;
+				$handleLink = "//www.topcoder.com/member-profile/" . $row->handle;
 				?>
 				<tr>
 					<td><?php echo $row->rank;?></td>
@@ -191,7 +191,7 @@ class Tops_Rank_Widget extends WP_Widget {
 			$arrRank = $arrTopRank->data;	
 			if ($arrRank != null)
 			foreach ( $arrRank as $row ) :
-				$handleLink = get_bloginfo ( "siteurl" ) . "/member-profile/" . $row->handle;
+				$handleLink = "//www.topcoder.com/member-profile/" . $row->handle;
 				?>
 				<tr>
 					<td><?php echo $row->rank;?></td>

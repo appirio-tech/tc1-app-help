@@ -306,7 +306,7 @@ class TCHOOK_Public extends TCHOOK_Plugin {
 			if ($coder_profile->isPM) {
 				$coder_color = "color:#FF9900";
 			}
-			return '<a class="tc_coder coder" href="' . $siteURL . '/member-profile/' . $coder_handle . '" style="' . $coder_color . '">' . $coder_handle . '</a>';
+			return '<a class="tc_coder coder" href="//www.topcoder.com/member-profile/' . $coder_handle . '" style="' . $coder_color . '">' . $coder_handle . '</a>';
 		}
 		return $handle;
 	}

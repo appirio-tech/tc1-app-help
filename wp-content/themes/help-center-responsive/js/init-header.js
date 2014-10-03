@@ -34,7 +34,7 @@ $(document).ready(function () {
             color = '#FF9900';
           }
           $('.userDetails .coder').attr('style', 'color: ' + color);
-          var userPofileUrl = wpUrl + '/member-profile/' + handle;
+          var userPofileUrl = '//www.topcoder.com/member-profile/' + handle;
           $('.userWidget .userDetails').prepend('<a class="tc_coder coder" href="' + userPofileUrl + '" style="color:' + color + '">' + handle + '</a>');
           $('.myProfileLink, .profileLink').attr('href', userPofileUrl);
           $('.userDetails .country').text(data['country']);

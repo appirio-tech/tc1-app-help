@@ -115,9 +115,9 @@ $photoLink = 'http://community.topcoder.com/i/m/nophoto_login.gif';
 						<img src="<?php echo $photoLink;?>" alt="<?php echo $coder->handle; ?>">
 					</div>
 					<div class="userDetails">
-						<a href="<?php bloginfo('wpurl');?>/member-profile/?ha=<?php echo $coder->handle;?>" style="color:<?php echo $coder->colorStyle->color;?>" class="coder"><?php echo $handle ;?></a>
+						<a href="//www.topcoder.com/member-profile/?ha=<?php echo $coder->handle;?>" style="color:<?php echo $coder->colorStyle->color;?>" class="coder"><?php echo $handle ;?></a>
 						<p class="country"><?php echo $coder->country; ?></p>
-						<a href="<?php bloginfo('wpurl');?>/member-profile/<?php echo $coder->handle;?>" class="link myProfileLink">My Profile</a>
+						<a href="//www.topcoder.com/member-profile/<?php echo $coder->handle;?>" class="link myProfileLink">My Profile</a>
 						<a href="http://community.topcoder.com/tc?module=MyHome" class="link">My TopCoder </a>
 						<a href="http://community.topcoder.com/tc?module=MyHome" class="link">Account Settings </a>	
 					</div>
@@ -194,7 +194,7 @@ $photoLink = 'http://community.topcoder.com/i/m/nophoto_login.gif';
 						</div>
 					</div>
 					<div class="action">
-						<a class="profileLink" href="<?php bloginfo('wpurl');?>/member-profile/<?php echo $coder->handle;?>">My Profile</a>
+						<a class="profileLink" href="//www.topcoder.com/member-profile/<?php echo $coder->handle;?>">My Profile</a>
 						<a href="http://community.topcoder.com/tc?module=MyHome">My TopCoder </a>
 						<a href="http://community.topcoder.com/tc?module=MyHome" class="linkAlt">Account Settings</a>
 					</div>
